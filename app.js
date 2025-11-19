@@ -21,14 +21,14 @@
 
       const percent = Math.round((score / 20) * 100);
       const result = document.getElementById('result');
-      result.innerHTML = `Sizning natijangiz: ${score}/20 (${percent}%)<br>`;
+      result.innerHTML = `natija: ${score}/20 (${percent}%)<br>`;
 
       
 
       result.innerHTML += `<button class="showErrors" onclick="showMistakes()">Xatolarni ko‘rish</button>`;
       window.scrollTo(0, document.body.scrollHeight);
 
-      window.userMistakes = wrongList; // saqlab qo‘yish
+      window.userMistakes = wrongList; 
     }
 
     function showMistakes(){
